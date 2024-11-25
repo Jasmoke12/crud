@@ -1,0 +1,129 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('camille-minouflet-d7M5Xramf8g-unsplash.jpg'); /* Cambia la URL por una imagen de viaje */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+form {
+    background: linear-gradient(145deg, #f0f8ff, #e6e6fa);
+    border: 2px solid #8A2BE2;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form svg {
+    width: 50px;
+    height: 50px;
+    color: #8A2BE2;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #2E8B57;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    color: #483D8B;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #FAF0E6;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #8A2BE2;
+    outline: none;
+    background-color: #FFF;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(145deg, #FF4500, #FF6347);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(145deg, #FF6347, #FF4500);
+    transform: translateY(-2px);
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+option {
+    color: #333;
+}
+
+br {
+    display: none;
+}
+
+input[type="radio"] + label {
+    font-weight: normal;
+}
+
+input[type="radio"]:checked + label {
+    color: #FF4500;
+}
